@@ -37,6 +37,12 @@ py_library(
     deps = ["//xyz:abc1"],
 )
 
+py_binary(
+    name = "bar7",
+    srcs = ["bar7.py"],
+    deps = [requirement("flask")],
+)
+
 py_library(
     name = "foo",
     srcs = ["foo.py"],
